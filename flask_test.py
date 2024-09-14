@@ -1,5 +1,3 @@
-from crypt import methods
-
 import flask
 
 app = flask.Flask(__name__)
@@ -12,7 +10,7 @@ def hello():
 def hello2():
     return "Hello Python2"
 
-@app.route("/abcdef", methods = ["POST"])
+@app.route("/def", methods = ["POST"])
 def hello3():
     return "Hello Python3"
 
